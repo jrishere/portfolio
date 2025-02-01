@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Justin Nacionales / Portfolio"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Justin Nacionales"
+description              : &description "Computer Science major at UH (Class of 2025) with a passion for software development, cybersecurity, and problem-solving."
 url                      : https://jrishere.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "portfolio/jrishere.github.io"
@@ -22,21 +22,21 @@ repository               : "portfolio/jrishere.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Justin Nacionales"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Computer Science major at UH (Class of 2025) with a passion for software development, cybersecurity, and problem-solving."
+  location         : "Houston, Texas"
+  employer         : "University of Houston"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "justinnacionales21@gmail.com" 
 
-  # Academic websites
+  # Links to Academic Websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : ""
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : ""
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : ""
   researchgate     : # URL
   scopus           : # URL
 
@@ -44,12 +44,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "jrishere"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : "" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -58,7 +58,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/justinnacionales/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -73,6 +73,10 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
+
+  # Links to Education and Resume
+  university_link  : "https://www.cs.uh.edu"
+  resume           : "assets/resume.pdf"  # Resume in PDF format
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -144,11 +148,11 @@ social:
   links: # An array of links to social media profiles
 
 
-# Analytics
+# Analytics - Google Analytics Tracking ID
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  "google"
   google:
-    tracking_id          :
+    tracking_id          : "G-CYH3Q22W7N" # Your Google Analytics Measurement ID
 
 
 # Reading Files
@@ -339,14 +343,7 @@ tag_archive:
 #   layouts:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
+#     category_fallback: false
+#     tag_fallback: false
+#   add_permalink: true
 
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development

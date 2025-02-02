@@ -8,13 +8,14 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Justin Nacionales / Portfolio"
+site_theme               : "default"
+title                    : "Your Name / Site Title"
 title_separator          : "-"
-name                     : &name "Justin Nacionales"
-description              : &description "Computer Science major at UH (Class of 2025) with a passion for software development, cybersecurity, and problem-solving."
-url                      : https://jrishere.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+name                     : &name "Your Name"
+description              : &description "personal description"
+url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "portfolio/jrishere.github.io"
+repository               : "academicpages/academicpages.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -22,21 +23,21 @@ repository               : "portfolio/jrishere.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Justin Nacionales"
+  name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
-  bio              : "Computer Science major at UH (Class of 2025) with a passion for software development, cybersecurity, and problem-solving."
-  location         : "Houston, Texas"
-  employer         : "University of Houston"
+  bio              : "Short biography for the left-hand sidebar"
+  location         : "Earth"
+  employer         : "Red Brick University"
   uri              : # URL
-  email            : "justinnacionales21@gmail.com" 
+  email            : "none@example.org" 
 
-  # Links to Academic Websites
+  # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : ""
+  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : ""
+  orcid            : "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : ""
+  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
   scopus           : # URL
 
@@ -44,12 +45,12 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "jrishere"
+  github           : "academicpages"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : "" # Replace this with you Bluesky username
+  bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -58,7 +59,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : "https://www.linkedin.com/in/justinnacionales/"
+  linkedin         : # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -73,10 +74,6 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
-
-  # Links to Education and Resume
-  university_link  : "https://www.cs.uh.edu"
-  resume           : "assets/resume.pdf"  # Resume in PDF format
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
@@ -148,11 +145,11 @@ social:
   links: # An array of links to social media profiles
 
 
-# Analytics - Google Analytics Tracking ID
+# Analytics
 analytics:
-  provider               :  "google"
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
-    tracking_id          : "G-CYH3Q22W7N" # Your Google Analytics Measurement ID
+    tracking_id          :
 
 
 # Reading Files
@@ -343,7 +340,14 @@ tag_archive:
 #   layouts:
 #     category: archive-taxonomy
 #     tag: archive-taxonomy
-#     category_fallback: false
-#     tag_fallback: false
-#   add_permalink: true
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
 
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
